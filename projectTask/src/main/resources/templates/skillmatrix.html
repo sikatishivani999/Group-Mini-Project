@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+
+    <title>Document</title>
+   <link rel="stylesheet"  href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" th:href="@{/css/skillmatrix.css}">
+</head>
+<body id="body">
+    <nav >
+        <i class="fa-solid fa-head-side-brain"></i>
+    <h2>SKILL MATRIX FORM</h2>
+</nav>
+    <form id="skill" th:action="@{/process1}" method="post" th:object="${user}">
+    <label for="empname"  >EmployeeName:</label>
+    <input type ="text" placeholder="Enter name" id="name" name="UserName"><br><br><br><br>
+    <label for="empid" >EmployeeId:</label>
+    <input type ="text" placeholder="Enter Id" id="idd" name="UserId"><br><br><br><br>
+    <label for="techskills"  >Projects:</label>
+    <select name="project"  id="skills">
+        <option value="BRH">BRH</option>
+        <option value="VFS">VFS</option>
+        <option value="SMS">SMS</option>
+        <option value="BIOMET">BIOMET</option>
+      </select><br><br>
+      <label for="yof" name="">year Of Experience:</label>
+      <input type ="text" placeholder="Enter YOF" name="YearOfExp"><br><br><br><br>
+      
+<label>
+    TechnicalSkills:
+<!--     <input mbsc-input id="my-input" data-dropdown="true" data-tags="true" /> -->
+  <input type="text" id="txtText" name="TechnicalSkill" />
+</label>
+<select id="techNAMe" multiple>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JAVA">JAVA</option>
+        <option value="JS">JS</option>
+         <option value="mysql">mysql</option>
+          <option value="springboot">springboot</option>
+           <option value="React Js">React Js</option>
+             <option value="Angular">Angular</option>
+    </select>
+      <br>
+    <br>
+    <input type="button" value="Show Index" onclick="showSelected();" />
+    <br>
+    <br>
+<!--     <input type="text" id="txtText" name="project" /> -->
+
+        <input type ="submit" id="sub"><br><br><br><br>
+        <img src="https://media.istockphoto.com/photos/top-view-of-coworking-people-sitting-together-around-table-business-picture-id950346740?k=20&m=950346740&s=612x612&w=0&h=G3L-e07DtvXvEDPbqgPeOUrJ06B0K0328VlvN8X9FsY=">
+    </form>
+</body>
+
+<script>
+
+function showSelected()
+{
+    var selObj = document.getElementById('techNAMe');
+  var txtTextObj = document.getElementById('txtText');
+
+  var selIndex = selObj.selectedIndex;
+ txtTextObj.value += selObj.options[selIndex].text +', ';   
+}
+</script>
+
+</html>

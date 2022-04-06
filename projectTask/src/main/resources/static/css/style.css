@@ -1,0 +1,51 @@
+body {
+    margin: 5;
+    padding: 10;
+    background-image: linear-gradient(to bottom right, rgb(146, 184, 231), rgb(250, 195, 200));
+    background-size: 1366px 768px;
+    font-family: sans-serif;
+}
+
+label {
+    float: left;
+}
+
+.div-label {
+    white-space: nowrap;
+}
+
+input[type="text"] {
+    float: right;
+}
+
+.Regbox {
+    width: 450px;
+    height: 450px;
+    background: rgb(212, 182, 222);
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    border: none;
+}
+
+.Regbox {
+    /* box-shadow: 3px 3px 16px rgb(169, 200, 209); */
+    box-shadow: 0 0 20px#d0e6ea;
+}
+
+input {
+    /* border-radius:5px;
+    width:180px;
+    height:20px; */
+    border: none;
+    outline: none;
+}
+
+.regbut {
+    text-align: right;
+}

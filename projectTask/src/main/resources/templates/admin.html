@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet"  href="" th:href="@{/css/admin.css}">
+</head>
+<body>
+    <form >
+    <label for="techskills" >project details of employees:</label>
+    <select name="ProjectName" id="techNAMe">
+        <option value="BRH">BRH</option>
+        <option value="VFS">VFS</option>
+        <option value="SMS">SMS</option>
+        <option value="BIOmet">BIOmet</option>
+    </select>
+     <input type="text" id="txtText" name="ProjectName" />
+     <input type ="submit" id="sub" onclick="showSelected()";>
+</form>
+<table style="display:none">
+    <tr>
+        <th>EmployeeName</th>
+        <th>EmployeeId</th>
+        <th>TechnicalSkills</th>
+        <th>year Of Experience:</th>
+        <th>Project</th>
+    </tr>
+</table>
+</body>
+<script>
+
+function showSelected()
+{
+    var selObj = document.getElementById('techNAMe');
+  var txtTextObj = document.getElementById('txtText');
+
+
+  var selIndex = selObj.selectedIndex;
+ txtTextObj.value += selObj.options[selIndex].text;   
+}
+</script>
+</html>

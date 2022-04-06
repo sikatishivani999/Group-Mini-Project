@@ -1,0 +1,73 @@
+#body{
+    background: radial-gradient(#653d84, #332042);
+}
+#skill{
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+
+    color: #583672;
+border:1px solid black;
+
+width:1000px;
+height:500px;
+padding:50px;
+margin: 0 auto;
+margin-top:20px;
+border-radius:20px;
+font-weight: bold;
+position:relative;
+
+}
+h2{
+    font-size: 30px;
+    text-align:center;
+    color:black;
+    padding:10px 0;
+    border-bottom:1px solid #cccccc;
+
+}
+nav{
+     
+    height:50px;
+    width:100%;
+    background-color: #EFF0F1;
+ 
+}
+#sub{
+    background: radial-gradient(#653d84, #332042);
+    border:none;
+    padding:10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color:white;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border-color:#583672;
+}
+img{
+    float:right;
+    height:600px;
+    position:absolute;
+    right:0;
+    top:0;
+    width: 650px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#name{
+    margin-left:28px;
+}
+#idd{
+    margin-left:48px;
+}
+#skills{
+    padding-right: 32px;
+}
+#project{
+    padding-right: 82px;
+}
+select{
+    border-radius: 4s0px;
+    border-color: #583672;
+}

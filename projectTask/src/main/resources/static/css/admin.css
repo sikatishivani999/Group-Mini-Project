@@ -1,0 +1,17 @@
+#project{
+    color:white;
+    margin-left: 500px;
+    font-weight: bold;
+    font-size: 20px;
+}
+body{
+    background-color: black;
+}
+table,th,td{
+    color:white;
+    margin: 0 auto;
+    margin-top: 200px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+}

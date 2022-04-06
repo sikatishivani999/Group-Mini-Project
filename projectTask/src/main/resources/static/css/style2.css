@@ -1,0 +1,16 @@
+body {
+    background: url(../image/HomeBan1.jpg);
+    background-size: 1366px 768px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+
+.header1 {
+    padding: 100px;
+    text-align: left;
+    color: rgb(202, 73, 30);
+}
+
+.header1 h1 {
+    font-size: 80px;
+}
